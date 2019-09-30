@@ -9,27 +9,35 @@
     <meta name="description" content="The best Café in the world!">
     <meta name="keywords" content="cafe, coffee, shop">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Mansalva|Montserrat&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Mansalva%7CMontserrat&display=swap" rel="stylesheet">   
 </head>
 <body>
     <header role="banner" id="header">
         <h1 tabindex="1">Café Kakan</h1>
         <nav role="navigation" class="navigation">
             <ul>
-                <li role="navigation-button"><a href="#about">About</a></li>
-                <li role="navigation-button"><a href="#menu">Menu</a></li>
-                <li role="navigation-button"><a href="#contact">Contact</a></li>
+                <li><a href="#about" tabindex="2">About</a></li>
+                <li><a href="#menu" tabindex="3">Menu</a></li>
+                <li><a href="#contact" tabindex="4">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main role="main">
+    <main role="main">  
+        <section id="about">
+            <div class="image-container">
+                <img src="images/mike-marquez-unsplash.jpg" alt="Coffee machine making coffee" tabindex="5">
+            </div>
+            <article class="about-article-1" tabindex="6">
+                <h2>About - We are Café Kakan</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </article>
+        </section>
         
     </main>
     <footer>
-        
-        <button role="button" class="back-to-top-btn">
-            <a href="#header">^</a>
-        </button>
+        <div class="back-to-top-btn">
+            <a href="#header" role="button">^</a>
+        </div>
     </footer>
     
 </body>
