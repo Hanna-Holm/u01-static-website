@@ -2,7 +2,7 @@
 
 $base-color: #ece2da;
 $primary-color: #56667a;
-$secondary-color: #ba6e6e;
+$secondary-color: #d4aaaa;
 $third-color: #3c4b42;
 $contrast-color-1: #412625;
 $button-color: #663924;
@@ -34,7 +34,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Header */
+/* Header and navigation */
 
 #header {
     display: grid;
@@ -55,8 +55,8 @@ body {
         ul {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-
         }
+
         li {
             list-style-type: none;
             text-align: center;
@@ -82,36 +82,70 @@ body {
             padding: 20px 10px;
         }
     }
-
 }
 
-/* About section */
-#about {
+/* General section styling */
+
+#about, 
+#menu {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr;
     grid-template-areas: "a b c d";
-    grid-gap: 15px;
-    background-color: $third-color;
-    color: $text-color;
-
+    grid-row-gap: 15px;
+    text-align: center;
+    align-items: center;
+    
     > * { // Apply padding to all child elements
         padding: 15px;
     }
 
-    .image-container {
-        grid-area: b;
-        img {
-            width: 100%;
-        }
+    img {
+        width: 100%;
     }
 
-    .about-article-1 {
-        grid-area: c;
-        text-align: center;
+    p,
+    h2 {
+        padding: 0.7em;
     }
 }
 
+/* About section */
 
+#about {
+    background-color: $third-color;
+    color: $text-color;
+
+    .image-container {
+        grid-area: b;
+    }
+    .about-article-1 {
+        grid-area: c;
+    }
+}
+
+/* Menu section */
+
+#menu {
+    background-image: linear-gradient(to top, 
+                    hsla(0, 0%, 0%, 0.835),
+                    hsla(17, 23%, 46%, 0.596)),
+                    url(images/mike-kenneally-unsplash.jpg);
+}
+
+.menu-article {
+    grid-area: b;
+    background-color: hsla(0, 1%, 70%, 0.527);
+    height: 70vh;
+}
+
+.pdf-container {
+    grid-area: c;
+}
+
+.menu-pdf {
+    height: 100vh;
+    width: 33vw;
+}
 
 
 /* Back-to-top button */

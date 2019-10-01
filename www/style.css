@@ -21,7 +21,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Header */
+/* Header and navigation */
 #header {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -63,27 +63,61 @@ body {
   padding: 20px 10px;
 }
 
-/* About section */
-#about {
+/* General section styling */
+#about,
+#menu {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-areas: "a b c d";
-  grid-gap: 15px;
+  grid-row-gap: 15px;
+  text-align: center;
+  align-items: center;
+}
+#about > *,
+#menu > * {
+  padding: 15px;
+}
+#about img,
+#menu img {
+  width: 100%;
+}
+#about p,
+#about h2,
+#menu p,
+#menu h2 {
+  padding: 0.7em;
+}
+
+/* About section */
+#about {
   background-color: #3c4b42;
   color: #f5f3f3;
-}
-#about > * {
-  padding: 15px;
 }
 #about .image-container {
   grid-area: b;
 }
-#about .image-container img {
-  width: 100%;
-}
 #about .about-article-1 {
   grid-area: c;
-  text-align: center;
+}
+
+/* Menu section */
+#menu {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.835), rgba(144, 106, 90, 0.596)), url(images/mike-kenneally-unsplash.jpg);
+}
+
+.menu-article {
+  grid-area: b;
+  background-color: rgba(179, 178, 178, 0.527);
+  height: 70vh;
+}
+
+.pdf-container {
+  grid-area: c;
+}
+
+.menu-pdf {
+  height: 100vh;
+  width: 33vw;
 }
 
 /* Back-to-top button */
