@@ -167,6 +167,7 @@ footer {
   background-color: #00232c;
   color: #f5f3f3;
 }
+<<<<<<< HEAD
 footer p {
   padding: 3px;
 }
@@ -199,6 +200,14 @@ footer a {
   font-style: italic;
   padding: 10px 0;
   font-size: 0.9em;
+=======
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: a b;
+  text-align: center;
+>>>>>>> 8d3af2273b2c4e08b7a179aa480b9be106c47728
 }
 
 /* Back-to-top button */
