@@ -100,7 +100,7 @@ h2 {
 
 /* About section */
 #about {
-  background-color: #3c4b42;
+  background-color: #271906;
   color: #f5f3f3;
 }
 #about .image-container {
@@ -112,7 +112,7 @@ h2 {
 
 /* Menu section */
 #menu {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.835), rgba(144, 106, 90, 0.596)), url(images/mike-kenneally-unsplash.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.644), rgba(185, 120, 100, 0.445)), url(images/mike-kenneally-unsplash.jpg);
 }
 
 .menu-article {
@@ -157,6 +157,19 @@ h2 {
 
 .contact-container img {
   grid-area: c;
+}
+
+/* Footer section */
+footer {
+  background-color: #00232c;
+  color: #f5f3f3;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: a b;
+  text-align: center;
 }
 
 /* Back-to-top button */

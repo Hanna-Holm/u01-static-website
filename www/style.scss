@@ -2,11 +2,12 @@
 $base-color: #ece2da;
 $primary-color: #567a72;
 $secondary-color: #d4aaaa;
-$third-color: #3c4b42;
+$third-color: #271906;
 $contrast-color-1: #412625;
 $button-color: #663924;
 $button-focus: #3f1402;
 $text-color: rgb(245, 243, 243);
+$dark-color: #00232c;
 
 /* Reset of box model */
 * {
@@ -126,8 +127,8 @@ h2 {
 /* Menu section */
 #menu {
     background-image: linear-gradient(to top, 
-                    hsla(0, 0%, 0%, 0.835),
-                    hsla(17, 23%, 46%, 0.596)),
+                    hsla(0, 0%, 0%, 0.644),
+                    hsla(14, 38%, 56%, 0.445)),
                     url(images/mike-kenneally-unsplash.jpg);
 }
 
@@ -181,6 +182,19 @@ h2 {
     img {
         grid-area: c;
     }
+}
+
+/* Footer section */
+footer {
+    background-color: $dark-color;
+    color: $text-color;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: a b;
+    text-align: center;
 }
 
 
