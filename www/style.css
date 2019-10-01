@@ -21,6 +21,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+
 /* Header and navigation */
 #header {
   display: grid;
@@ -65,7 +70,8 @@ body {
 
 /* General section styling */
 #about,
-#menu {
+#menu,
+.contact-container {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-areas: "a b c d";
@@ -74,17 +80,21 @@ body {
   align-items: center;
 }
 #about > *,
-#menu > * {
+#menu > *,
+.contact-container > * {
   padding: 15px;
 }
 #about img,
-#menu img {
+#menu img,
+.contact-container img {
   width: 100%;
 }
 #about p,
 #about h2,
 #menu p,
-#menu h2 {
+#menu h2,
+.contact-container p,
+.contact-container h2 {
   padding: 0.7em;
 }
 
@@ -118,6 +128,35 @@ body {
 .menu-pdf {
   height: 100vh;
   width: 33vw;
+}
+
+/* Contact section */
+.contact-form {
+  text-align: left;
+  grid-area: b;
+  justify-self: center;
+}
+.contact-form p {
+  padding: 0;
+}
+.contact-form input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+}
+.contact-form textarea {
+  width: 100%;
+}
+.contact-form button {
+  padding: 10px 20px;
+  display: block;
+}
+.contact-form button:hover {
+  cursor: pointer;
+}
+
+.contact-container img {
+  grid-area: c;
 }
 
 /* Back-to-top button */
