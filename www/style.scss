@@ -1,6 +1,6 @@
 /* Color variables */
 $base-color: #ece2da;
-$primary-color: #56667a;
+$primary-color: #567a72;
 $secondary-color: #d4aaaa;
 $third-color: #3c4b42;
 $contrast-color-1: #412625;
@@ -29,6 +29,11 @@ body {
 body {
     background-color: $base-color;
     font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
 }
 
 /* Header and navigation */
@@ -82,7 +87,8 @@ body {
 
 /* General section styling */
 #about, 
-#menu {
+#menu,
+.contact-container {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr;
     grid-template-areas: "a b c d";
@@ -141,8 +147,41 @@ body {
 }
 
 /* Contact section */
+.contact-form {
+    text-align: left;
+    grid-area: b;
+    justify-self: center;
+    
+    p {
+        padding: 0;
+    }
 
+    input {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+    }
 
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        padding: 10px 20px;
+        display: block;
+
+    }
+    
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+.contact-container {
+    img {
+        grid-area: c;
+    }
+}
 
 
 /* Back-to-top button */
