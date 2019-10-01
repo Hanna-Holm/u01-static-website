@@ -9,7 +9,7 @@
     <meta name="description" content="The best Café in the world!">
     <meta name="keywords" content="cafe, coffee, shop">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Mansalva%7CMontserrat&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Mansalva%7CMontserrat%7CPacifico%7CRaleway%7CShadows+Into+Light&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/a617ba97df.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,33 +25,39 @@
     </header>
     <main role="main">  
         <section id="about">
-            <div class="image-container">
-                <img src="images/mike-marquez-unsplash.jpg" alt="Coffee machine making coffee" tabindex="5">
+            <h2>About</h2>
+            <div class="about-container">
+                <div class="image-container">
+                    <img src="images/mike-marquez-unsplash.jpg" alt="Coffee machine making coffee" tabindex="5">
+                </div>
+                <article class="about-article-1" tabindex="6">
+                    <h3>We are Café Kakan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perspiciatis commodi iure ullam error a illo aliquid quas numquam tempore?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Harum voluptas voluptates esse animi a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic optio eum pariatur dolorum tempore illo?Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, minima.</p>
+                </article>
             </div>
-            <article class="about-article-1" tabindex="6">
-                <h2>About - We are Café Kakan</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perspiciatis commodi iure ullam error a illo aliquid quas numquam tempore?</p>
-                <p>Lorem ipsum dolor sit amet consectetur. Harum voluptas voluptates esse animi a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic optio eum pariatur dolorum tempore illo?Lorem ipsum dolor sit amet consectetur.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, minima.</p>
-            </article>
         </section>
         <section id="menu">
-            <article class="menu-article">
-                <h2>This is our menu</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex doloribus quae eius voluptas?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque excepturi vitae aliquid exercitationem quasi impedit debitis accusantium eligendi porro?</p>
-                <video controls>
-                    <source src="assets/cute-cat-drinking-coffee.mp4" 
-                        type="video/mp4">
-                    <p>Sorry, the video could not be played in your browser.</p>
-                </video>
-            </article>
-            <div class="pdf-container">
-                <embed src="assets/menu-cafe-kakan.pdf"   
-                       type="application/pdf"
-                       class="menu-pdf" />
+            <h2>Menu</h2>
+            <div class="menu-container">
+                <article class="menu-article">
+                    <h3>This is our menu</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex doloribus quae eius voluptas?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque excepturi vitae aliquid exercitationem quasi impedit debitis accusantium eligendi porro?</p>
+                    <video controls>
+                        <source src="assets/cute-cat-drinking-coffee.mp4" 
+                            type="video/mp4">
+                        <p>Sorry, the video could not be played in your browser.</p>
+                    </video>
+                </article>
+                <div class="pdf-container">
+                    <embed src="assets/menu-cafe-kakan.pdf"   
+                            type="application/pdf"
+                            class="menu-pdf" />
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -115,10 +121,10 @@
                 <a href="#menu">Menu</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="copyright-thing">
-                <p>2019 - Hanna Holm</p>
-            </div>
         </section>
+        <div class="copyright-thing">
+            <p>2019 - Hanna Holm</p>
+        </div>
     </footer>
     <div class="back-to-top-btn">
         <a href="#header" role="button">^</a>

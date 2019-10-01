@@ -21,9 +21,23 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+  font-family: "Mansalva", cursive;
+  color: #412625;
+  font-size: 3.5em;
+  margin-left: 0.5em;
+}
+
 h2 {
+  font-family: "Raleway", sans-serif;
   text-align: center;
-  padding: 10px;
+  font-size: 2em;
+  padding: 15px 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
 }
 
 /* Header and navigation */
@@ -32,12 +46,6 @@ h2 {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   height: 15%;
-}
-#header h1 {
-  font-family: "Mansalva", cursive;
-  color: #412625;
-  font-size: 3em;
-  margin-left: 0.5em;
 }
 #header .navigation {
   font-size: 2em;
@@ -69,8 +77,8 @@ h2 {
 }
 
 /* General section styling */
-#about,
-#menu,
+.about-container,
+.menu-container,
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
@@ -79,20 +87,20 @@ h2 {
   text-align: center;
   align-items: center;
 }
-#about > *,
-#menu > *,
+.about-container > *,
+.menu-container > *,
 .contact-container > * {
   padding: 15px;
 }
-#about img,
-#menu img,
+.about-container img,
+.menu-container img,
 .contact-container img {
   width: 100%;
 }
-#about p,
-#about h2,
-#menu p,
-#menu h2,
+.about-container p,
+.about-container h2,
+.menu-container p,
+.menu-container h2,
 .contact-container p,
 .contact-container h2 {
   padding: 0.7em;
@@ -167,7 +175,6 @@ footer {
   background-color: #00232c;
   color: #f5f3f3;
 }
-<<<<<<< HEAD
 footer p {
   padding: 3px;
 }
@@ -179,7 +186,7 @@ footer a {
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: a b c d e f;
+  grid-template-areas: a b c;
   text-align: center;
   padding: 15px 0;
 }
@@ -200,14 +207,6 @@ footer a {
   font-style: italic;
   padding: 10px 0;
   font-size: 0.9em;
-=======
-
-.footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: a b;
-  text-align: center;
->>>>>>> 8d3af2273b2c4e08b7a179aa480b9be106c47728
 }
 
 /* Back-to-top button */
