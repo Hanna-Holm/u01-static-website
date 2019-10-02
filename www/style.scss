@@ -30,6 +30,7 @@ body {
 body {
     background-color: $base-color;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -94,14 +95,12 @@ h3 {
 }
 
 /* General section styling */
-.about-container,
-.menu-container,
+.about-container, 
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr;
     grid-template-areas: "a b c d";
     grid-row-gap: 15px;
-    text-align: center;
     align-items: center;
     
     > * { // Apply padding to all child elements
@@ -117,6 +116,7 @@ h3 {
         padding: 0.7em;
     }
 }
+
 
 /* About section */
 #about {
@@ -139,24 +139,35 @@ h3 {
                     url(images/mike-kenneally-unsplash.jpg);
 }
 
+.menu-container {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas: "a b c";
+    padding-bottom: 30px;
+}
+
 .menu-article {
     grid-area: b;
     background-color: hsla(0, 1%, 70%, 0.527);
-    height: 90%;
-
-    video {
-        margin: 30px 0;
+    p,
+    h3 {
+        padding: 0.7em;
+    }
+    .pdf-and-video-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+        video {
+            padding: 35px;
+        }
     }
 }
 
-.pdf-container {
-    grid-area: c;
-}
-
 .menu-pdf {
-    height: 100vh;
-    width: 33vw;
-}
+    height: 90vh;
+    width: 45vw;
+}    
 
 /* Contact section */
 .contact-form {
@@ -217,6 +228,15 @@ footer {
 }
 
 .social-media {
+    ul {
+        list-style-type: none;
+    }
+
+    i {
+        font-size: 0.6em;
+        margin: 5px;
+    }
+
     a {
         font-size: 2em;
         padding: 10px;
@@ -231,10 +251,7 @@ footer {
 }
 
 .copyright-thing {
-    grid-area: e;
-    text-align: center;
-    font-style: italic;
-    padding: 10px 0;
+    padding: 20px;
     font-size: 0.9em;
 }
 
@@ -260,3 +277,39 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1180px) {
+    #header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
+        padding: 10px;
+    }
+    
+    #about {
+        .image-container {
+            grid-area: a;
+        }
+        .about-article-1 {
+            grid-area: b;
+        }
+    }
+
+    .menu-article {
+        .pdf-and-video-container {
+            display: block;
+        }
+
+        .menu-pdf {
+            width: 80vw;
+            margin-top: 20px;
+        }
+    }
+    
+}
+
+// @media only screen and (max-width: 800px) {
+
+// }

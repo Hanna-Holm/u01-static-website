@@ -19,6 +19,7 @@ body {
 body {
   background-color: #ece2da;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -78,29 +79,23 @@ h3 {
 
 /* General section styling */
 .about-container,
-.menu-container,
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-areas: "a b c d";
   grid-row-gap: 15px;
-  text-align: center;
   align-items: center;
 }
 .about-container > *,
-.menu-container > *,
 .contact-container > * {
   padding: 15px;
 }
 .about-container img,
-.menu-container img,
 .contact-container img {
   width: 100%;
 }
 .about-container p,
 .about-container h2,
-.menu-container p,
-.menu-container h2,
 .contact-container p,
 .contact-container h2 {
   padding: 0.7em;
@@ -123,22 +118,34 @@ h3 {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.644), rgba(185, 120, 100, 0.445)), url(images/mike-kenneally-unsplash.jpg);
 }
 
+.menu-container {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-areas: "a b c";
+  padding-bottom: 30px;
+}
+
 .menu-article {
   grid-area: b;
   background-color: rgba(179, 178, 178, 0.527);
-  height: 90%;
 }
-.menu-article video {
-  margin: 30px 0;
+.menu-article p,
+.menu-article h3 {
+  padding: 0.7em;
 }
-
-.pdf-container {
-  grid-area: c;
+.menu-article .pdf-and-video-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.menu-article .pdf-and-video-container video {
+  padding: 35px;
 }
 
 .menu-pdf {
-  height: 100vh;
-  width: 33vw;
+  height: 90vh;
+  width: 45vw;
 }
 
 /* Contact section */
@@ -191,6 +198,13 @@ footer a {
   padding: 15px 0;
 }
 
+.social-media ul {
+  list-style-type: none;
+}
+.social-media i {
+  font-size: 0.6em;
+  margin: 5px;
+}
 .social-media a {
   font-size: 2em;
   padding: 10px;
@@ -202,10 +216,7 @@ footer a {
 }
 
 .copyright-thing {
-  grid-area: e;
-  text-align: center;
-  font-style: italic;
-  padding: 10px 0;
+  padding: 20px;
   font-size: 0.9em;
 }
 
@@ -226,6 +237,34 @@ footer a {
 }
 .back-to-top-btn :hover {
   background-color: #3f1402;
+}
+
+@media only screen and (max-width: 1180px) {
+  #header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+    padding: 10px;
+  }
+
+  #about .image-container {
+    grid-area: a;
+  }
+  #about .about-article-1 {
+    grid-area: b;
+  }
+
+  .menu-article .pdf-and-video-container {
+    display: block;
+  }
+  .menu-article .menu-pdf {
+    width: 80vw;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
