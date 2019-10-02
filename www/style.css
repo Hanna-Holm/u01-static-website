@@ -191,6 +191,13 @@ footer a {
   padding: 15px 0;
 }
 
+.social-media ul {
+  list-style-type: none;
+}
+.social-media i {
+  font-size: 0.7em;
+  margin: 5px;
+}
 .social-media a {
   font-size: 2em;
   padding: 10px;

@@ -217,6 +217,15 @@ footer {
 }
 
 .social-media {
+    ul {
+        list-style-type: none;
+    }
+
+    i {
+        font-size: 0.7em;
+        margin: 5px;
+    }
+    
     a {
         font-size: 2em;
         padding: 10px;
