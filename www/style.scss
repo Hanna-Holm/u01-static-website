@@ -14,16 +14,11 @@ $dark-color: #00232c;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    :focus { // To make it clearer when navigating with keyboard
-        border: 1px solid black;
-    }
 }
 
 /* General style */
 html, 
 body {
-    width: 100%;
     scroll-behavior: smooth;
 }
 
@@ -307,9 +302,33 @@ footer {
             margin-top: 20px;
         }
     }
-    
 }
 
-// @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+    #header {
+        .navigation ul {
+            display: block;
+            width: 80vw;
+            li {
+                width: 80%;
+            }
+        }
+    }
+    
+    .about-container {
+        display: block;
+    }
+}
 
-// }
+@media only screen and (max-width: 600px) {
+    video {
+        width: 100%;
+    }
+    .contact-container, 
+    .footer-container {
+        display: block;
+    }
+    .footer-container h2 {
+        padding: 30px 0 5px 0;
+    }
+}
