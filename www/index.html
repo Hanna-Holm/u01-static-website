@@ -15,7 +15,7 @@
 <body>
     <header role="banner" id="header">
         <h1 tabindex="1">Café Kakan</h1>
-        <nav role="navigation" class="navigation">
+        <nav aria-label="Main navigation" class="navigation">
             <ul>
                 <li><a href="#about" tabindex="2">About</a></li>
                 <li><a href="#menu" tabindex="3">Menu</a></li>
@@ -30,7 +30,7 @@
                 <div class="image-container">
                     <img src="images/mike-marquez-unsplash.jpg" alt="Coffee machine making coffee" tabindex="5">
                 </div>
-                <article class="about-article-1" tabindex="6">
+                <article class="about-article-1" role="article" tabindex="6">
                     <h3>We are Café Kakan</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perspiciatis commodi iure ullam error a illo aliquid quas numquam tempore?</p>
@@ -39,6 +39,7 @@
                 </article>
             </div>
         </section>
+
         <section id="menu">
             <h2>Menu</h2>
             <div class="menu-container">
@@ -47,30 +48,33 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex doloribus quae eius voluptas?</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque excepturi vitae aliquid exercitationem quasi impedit debitis accusantium eligendi porro?</p>
-                    <video controls>
-                        <source src="assets/cute-cat-drinking-coffee.mp4" 
-                            type="video/mp4">
-                        <p>Sorry, the video could not be played in your browser.</p>
-                    </video>
-                </article>
-                <div class="pdf-container">
-                    <embed src="assets/menu-cafe-kakan.pdf"   
+                    <div class="pdf-and-video-container">
+                        <embed src="assets/menu-cafe-kakan.pdf"   
                             type="application/pdf"
                             class="menu-pdf" />
-                </div>
+                        <aside class="video-container">
+                            <video controls>
+                                <source src="assets/cute-cat-drinking-coffee.mp4" 
+                                        type="video/mp4">
+                                <p>Sorry, the video could not be played in your browser.</p>
+                            </video>
+                        </aside>
+                    </div>
+                </article>
             </div>
         </section>
+        
         <section id="contact">
             <h2>Contact us</h2>
             <div class="contact-container">
                 <form class="contact-form" action="#home">
                     <p>Please input your email adress below: </p>
                     <label for="email-input">
-                        <input id="email-input" type="email" placeholder="namn@example.com" required />    
+                        <input id="email-input" type="email" placeholder="namn@example.com" aria-required="true" required />    
                     </label>
                     <p>Please input your name below: </p>
                     <label for="name-input">
-                        <input id="name-input" type="text" placeholder="Förnamn Efternamn" required />
+                        <input id="name-input" type="text" placeholder="Förnamn Efternamn" aria-required="true" required />
                     </label>
                     <p>Please write your question below: </p>
                     <label for="errand-input">
@@ -124,10 +128,6 @@
                         </a>
                     </li>
                 </ul>
-                
-                
-                
-                
             </div>
             <div class="additional-links">
                 <h2>Links</h2>
