@@ -47,6 +47,8 @@ h3 {
     font-size: 1.5em;
 }
 
+
+
 /* Header and navigation */
 #header {
     display: grid;
@@ -236,6 +238,11 @@ footer {
         font-size: 2em;
         padding: 10px;
     }
+
+    p {
+        display: inline;
+        font-size: 0.6em;
+    }
 }
 
 .additional-links {
@@ -270,7 +277,12 @@ footer {
     :hover {
         background-color: $button-focus;
     }
+
+    p {
+        opacity: 0;
+    }
 }
+
 
 @media only screen and (max-width: 1180px) {
     #header {

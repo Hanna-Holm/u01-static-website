@@ -205,6 +205,10 @@ footer a {
   font-size: 2em;
   padding: 10px;
 }
+.social-media p {
+  display: inline;
+  font-size: 0.6em;
+}
 
 .additional-links a {
   display: block;
@@ -233,6 +237,9 @@ footer a {
 }
 .back-to-top-btn :hover {
   background-color: #3f1402;
+}
+.back-to-top-btn p {
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1180px) {
