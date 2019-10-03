@@ -33,6 +33,7 @@ h1 {
     color: $contrast-color-1;
     font-size: 3.5em;
     margin-left: 0.5em;
+    text-align: left;
 }
 
 h2 {
@@ -53,15 +54,14 @@ h3 {
 #header {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    align-items: center;
+    justify-content: start;
     height: 15%;
 
     .navigation {
         font-size: 2em;
 
         ul {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
         }
 
         li {
@@ -70,23 +70,23 @@ h3 {
             background-color: $button-color;
             border-radius: 5px;
             margin: 15px 35px;
-            width: 180px;
+            width: 80%;
 
             :hover {
                 background-color: $button-focus;
                 border-radius: 5px;
             }
             
-            :focus {
-                width: 180px;
-            }
+            // :focus {
+            //     width: 180px;
+            // }
         }
 
         a {
             color: $text-color;
             text-decoration: none;
             display: block;
-            padding: 20px 10px;
+            padding: 20px 40px;
         }
     }
 }
@@ -318,11 +318,18 @@ footer {
 
 @media only screen and (max-width: 800px) {
     #header {
+        display: block;
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
         .navigation ul {
-            display: block;
-            width: 80vw;
-            li {
-                width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+            a {
+                width: 100%;
             }
         }
     }
