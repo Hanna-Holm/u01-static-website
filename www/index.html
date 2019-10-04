@@ -56,6 +56,7 @@
                             <video controls tabindex="18">
                                 <source src="assets/cute-cat-drinking-coffee.mp4" 
                                         type="video/mp4">
+                                <!-- Show below text if web browser does not support video format -->
                                 <p>Sorry, the video could not be played in your browser.</p>
                             </video>
                         </aside>
@@ -66,43 +67,48 @@
         <section id="contact">
             <h2  tabindex="19">Contact us</h2>
             <div class="contact-container">
-                <form role="form" class="contact-form" action="#home">
-                    <p tabindex="20">Please input your email adress below: </p>
-                    <label for="email-input">
-                        <input id="email-input" tabindex="21" type="email" placeholder="namn@example.com" aria-required="true" required />    
-                    </label>
-                    <p tabindex="22">Please input your name below: </p>
-                    <label for="name-input">
-                        <input id="name-input" tabindex="23" type="text" aria-required="true" />
-                    </label>
-                    <p tabindex="24">Please write your question below: </p>
-                    <label for="errand-input">
-                        <textarea id="errand-input" tabindex="25" rows="5"></textarea>
-                    </label>
-                    <button type="submit" tabindex="26">Send</button>
-                </form>
+                <div class="contact-form-and-info">
+                    <div class="additional-contact">
+                        <h3 tabindex="28">Visit or call us</h3>
+                        <address>
+                            <p tabindex="29">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Cafévägen 3A
+                                </p>
+                                <p tabindex="30">123 45 Stockholm</p>
+                                <p tabindex="31">
+                                    <i class="fas fa-phone"></i>
+                                    08-1234567
+                                </p>
+                                <p tabindex="32">
+                                    <i class="fas fa-envelope"></i>
+                                    cafe@kakan.se
+                                </p>
+                        </address>
+                    </div>
+                    <form role="form" class="contact-form" action="#home">
+                        <h3>... or contact us by sending this form: </h3>
+                        <p tabindex="20">Please input your email adress below: </p>
+                        <label for="email-input">
+                            <input id="email-input" tabindex="21" type="email" placeholder="namn@example.com" aria-required="true" required />    
+                        </label>
+                        <p tabindex="22">Please input your name below: </p>
+                        <label for="name-input">
+                            <input id="name-input" tabindex="23" type="text" aria-required="true" />
+                        </label>
+                        <p tabindex="24">Please write your question below: </p>
+                        <label for="errand-input">
+                            <textarea id="errand-input" tabindex="25" rows="5"></textarea>
+                        </label>
+                        <button type="submit" tabindex="26">Send</button>
+                    </form>
+                </div>
                 <img src="images/nathan-dumlao-2-unsplash.jpg" tabindex="27" alt="cappuccino on a table">
             </div>
         </section>
     </main>
     <footer role="contentinfo">
         <section class="footer-container">
-            <div class="additional-contact">
-                <h2 tabindex="28">Contact</h2>
-                <p tabindex="29">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Cafévägen 3A
-                </p>
-                <p tabindex="30">123 45 Stockholm</p>
-                <p tabindex="31">
-                    <i class="fas fa-phone"></i>
-                    08-1234567
-                </p>
-                <p tabindex="32">
-                    <i class="fas fa-envelope"></i>
-                    cafe@kakan.se
-                </p>
-            </div>
             <div class="social-media">
                 <h2 tabindex="33">Follow us</h2>
                 <ul>
