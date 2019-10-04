@@ -44,6 +44,7 @@ h3 {
   grid-template-columns: 2fr 1fr;
   justify-content: start;
   height: 15%;
+  /* Style for the links, list and list-items in the header */
 }
 #header .navigation {
   font-size: 2em;
@@ -121,10 +122,17 @@ h3 {
 .menu-article {
   grid-area: b;
   background-color: rgba(179, 178, 178, 0.527);
+  /* Make the last paragraph have some space 
+  before the PDF and the video */
+  /* Grid container inside the menu grid container
+  which will hold two columns, one column for the PDF 
+  and one column for the video */
 }
-.menu-article p,
-.menu-article h3 {
-  padding: 0.7em;
+.menu-article p {
+  margin: 8px 0;
+}
+.menu-article p:last-of-type {
+  margin: 5px 0 30px 0;
 }
 .menu-article .pdf-and-video-container {
   display: grid;
@@ -142,6 +150,10 @@ h3 {
 }
 
 /* Contact section */
+.contact-container {
+  /* Placing the image to the right of the other content
+  in the contact container */
+}
 .contact-container img {
   grid-area: c;
 }
@@ -178,6 +190,7 @@ h3 {
   cursor: pointer;
 }
 
+/* Adding some space around the adress information */
 .additional-contact {
   margin: 0 0 25px 0;
 }
@@ -235,7 +248,7 @@ footer a {
 /* Back-to-top button */
 .back-to-top-btn a {
   position: fixed;
-  top: 93%;
+  top: 92%;
   right: 1%;
   width: 75px;
   height: 55px;
