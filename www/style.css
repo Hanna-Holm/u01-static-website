@@ -23,6 +23,7 @@ h1 {
   color: #412625;
   font-size: 3.5em;
   margin-left: 0.5em;
+  text-align: left;
 }
 
 h2 {
@@ -41,15 +42,14 @@ h3 {
 #header {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: center;
+  justify-content: start;
   height: 15%;
 }
 #header .navigation {
   font-size: 2em;
 }
 #header .navigation ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
 }
 #header .navigation li {
   list-style-type: none;
@@ -57,20 +57,17 @@ h3 {
   background-color: #663924;
   border-radius: 5px;
   margin: 15px 35px;
-  width: 180px;
+  width: 80%;
 }
 #header .navigation li :hover {
   background-color: #3f1402;
   border-radius: 5px;
 }
-#header .navigation li :focus {
-  width: 180px;
-}
 #header .navigation a {
   color: #f5f3f3;
   text-decoration: none;
   display: block;
-  padding: 20px 10px;
+  padding: 20px 40px;
 }
 
 /* General section styling */
@@ -285,12 +282,21 @@ footer a {
   }
 }
 @media only screen and (max-width: 800px) {
-  #header .navigation ul {
+  #header {
     display: block;
-    width: 80vw;
   }
-  #header .navigation ul li {
-    width: 80%;
+  #header h1 {
+    margin: 0;
+    text-align: center;
+  }
+  #header .navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  #header .navigation ul a {
+    width: 100%;
   }
 
   .contact-container,
